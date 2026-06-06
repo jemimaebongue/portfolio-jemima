@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Jemima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav>
+    <div class="nav-container">
+        <div class="logo">
+<span> Jemima</span>
+        </div>
+        <div class="link"><a href="#">Home</a></div>
+        <div class="link"><a href="#">About </a></div>
+        <div class="link"><a href="#">Skills</a></div>
+        <div class="link"><a href="#">Services</a></div>
+        <div class="link"><a href="#">Blogs</a></div>
+        <div class="link contact-btn"><a href="#">Contact Us</a></div>
+    </div>
+    <a href="javascript:void(0)"><img src="bars-solid.png" class="menu-icon" alt="Menu" onclick="hamburg()"></a>
+    </div>
+    <div class="dropdown">
+        <img src="xmark-solid.png" class="cancel" alt="Fermer" onclick="cancel()">
+        <div class="links">
+            <a href="index.html" onclick="cancel()">Home</a>
+            <a href="about.html" onclick="cancel()">About</a>
+            <a href="skills.html" onclick="cancel()">Skills</a>
+            <a href="services.html" onclick="cancel()">Services</a>
+            <a href="blogs.html" onclick="cancel()">Blogs</a>
+            <a href="contact.html" onclick="cancel()">Contact Us</a>
+        </div>
+    </div>
+    </nav> 
+
+    <section class="page-content">
+        <h1>About Me</h1>
+        <p>I'm Jemima, a computer science student passionate about web development.</p>
+        <p>I specialize in creating clean, modern, and responsive websites using HTML, CSS, and JavaScript. My goal is to build beautiful user experiences that work perfectly on all devices.</p>
+        <p>When I'm not coding, I love learning new technologies and design trends.</p>
+    </section>
+
+    <script>
+        function hamburg(){
+            document.querySelector(".dropdown").style.transform = "translateY(0vh)";
+        }
+        function cancel(){
+            document.querySelector(".dropdown").style.transform = "translateY(-100vh)";
+        }
+    </script>
+</body>
+</html>

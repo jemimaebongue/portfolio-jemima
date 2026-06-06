@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Jemima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+    <div class="nav-container">
+        <div class="logo">
+<span> Jemima</span>
+        </div>
+        <div class="link"><a href="#">Home</a></div>
+        <div class="link"><a href="#">About </a></div>
+        <div class="link"><a href="#">Skills</a></div>
+        <div class="link"><a href="#">Services</a></div>
+        <div class="link"><a href="#">Blogs</a></div>
+        <div class="link contact-btn"><a href="#">Contact Us</a></div>
+    </div>
+    <a href="javascript:void(0)"><img src="bars-solid.png" class="menu-icon" alt="Menu" onclick="hamburg()"></a>
+    </div>
+    <div class="dropdown">
+        <img src="xmark-solid.png" class="cancel" alt="Fermer" onclick="cancel()">
+        <div class="links">
+            <a href="index.html" onclick="cancel()">Home</a>
+            <a href="about.html" onclick="cancel()">About</a>
+            <a href="skills.html" onclick="cancel()">Skills</a>
+            <a href="services.html" onclick="cancel()">Services</a>
+            <a href="blogs.html" onclick="cancel()">Blogs</a>
+            <a href="contact.html" onclick="cancel()">Contact Us</a>
+        </div>
+    </div>
+    </nav>
+    <section class="page-content">
+    <h1>Blogs</h1>
+    <div>
+        <h3>Coming Soon</h3>
+        <p>I'm currently preparing articles about web development and design tips. Check back later!</p>
+    </div>
+</section>
+<script>
+        function hamburg(){
+            document.querySelector(".dropdown").style.transform = "translateY(0vh)";
+        }
+        function cancel(){
+            document.querySelector(".dropdown").style.transform = "translateY(-100vh)";
+        }
+     </script>
+</body>
+</html>
